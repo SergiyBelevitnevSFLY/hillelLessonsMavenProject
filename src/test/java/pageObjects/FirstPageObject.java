@@ -17,6 +17,7 @@ public class FirstPageObject {
 
     public void dragAndDropInTestApp(){
 
+        driver.switchTo().frame(driver.findElement(By.xpath("//*[@class='demo-frame']")));
         Actions actions = new Actions(driver);
         actions.dragAndDrop(driver.findElement(draggable),driver.findElement(droppable)).release().build().perform();
     }
