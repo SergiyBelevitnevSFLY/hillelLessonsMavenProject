@@ -5,6 +5,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import java.util.concurrent.TimeUnit;
@@ -18,6 +19,7 @@ public class ActionsExample extends BaseTest {
         Thread.sleep(3000);
         WebElement elementToHover = getDriver().findElement(By.xpath("//div[@class='figure'][2]"));
         actions.moveToElement(elementToHover).build().perform();
+        Assert.assertTrue(false);
         getDriver().findElement(By.cssSelector("a[href='/users/2']")).click();
     }
 
@@ -29,6 +31,7 @@ public class ActionsExample extends BaseTest {
         WebElement draggable = getDriver().findElement(By.id("draggable"));
         WebElement droppable = getDriver().findElement(By.id("droppable"));
         actions.dragAndDrop(draggable, droppable).release().build().perform();
+        Assert.assertTrue(false);
     }
 
     @Test

@@ -1,0 +1,10 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Default Suite">
+    <test name="org.hillelMaven" >
+        <classes>
+            <class name="WebDriverMangerExample"/>
+            <class name="WaitsTest"/>
+            <class name="FirstTest"/>
+        </classes>
+    </test>
+</suite>

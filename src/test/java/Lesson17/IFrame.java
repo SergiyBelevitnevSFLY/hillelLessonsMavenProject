@@ -8,7 +8,7 @@ import org.testng.annotations.Test;
 
 public class IFrame {
 
-    @Test
+    @Test(groups = "TestGroup")
     public void iframe() {
 
         WebDriverManager.chromedriver().setup();

@@ -1,0 +1,13 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Default Suite">
+    <test name="org.hillelMaven" >
+        <groups>
+            <run>
+                <include name="TestGroup"></include>
+            </run>
+        </groups>
+        <packages>
+            <package name="Lesson17"></package>
+        </packages>
+    </test>
+</suite>

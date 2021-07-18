@@ -10,7 +10,7 @@ import org.testng.annotations.Test;
 
 public class DropDownHandling {
 
-    @Test
+    @Test(groups = "TestGroup")
     public void dropDownTest(){
 
         WebDriverManager.chromedriver().setup();
