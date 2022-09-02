@@ -41,9 +41,10 @@ public class BaseTest {
         getDriver().quit();
     }
 
-    @Step("{}")
+    @Step("{0}")
     public void allureLog(String message){
         System.out.println(message);
+        saveScreenshotPNG();
     }
 
     @Attachment(value = "Page screenshot", type = "image/png")

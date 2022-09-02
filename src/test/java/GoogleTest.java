@@ -19,8 +19,6 @@ public class GoogleTest {
 //        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         driver.get("http://google.com");
         driver.findElement(searchInput).sendKeys("lhvelrhgoer");
-        Thread.sleep(3000);
-        Dimension dimension = driver.findElement(searchInput).getSize();
 
         Point point = driver.findElement(searchInput).getLocation();
         driver.findElement(searchInput).click();
